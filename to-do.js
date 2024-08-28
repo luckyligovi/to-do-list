@@ -20,7 +20,7 @@ texBoxValue.value = ""
 
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
-        e.classList.toggle("checked")
+        e.target.classList.toggle("checked")
     }
     else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove()
