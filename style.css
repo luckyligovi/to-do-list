@@ -23,8 +23,8 @@
  
 .todo-app h2{
     display: flex;
-    text-align: center;
     margin-bottom: 20px;
+    align-items: center ;
 }
 
 .todo-app h2 img {
@@ -38,29 +38,47 @@
     justify-content: space-between;
     padding-left: 20px;
     border-radius: 10px;
+    height: 70px;
 }
 
 input{
-    flex: 1;
+    flex: 1 ;
     border: none;
     outline: none;
-    background: transparent;
+    background: rgb(22, 18, 18);
     padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
     font-weight: 14px;
 }
 
 button{
     border: none;
     outline: none;
-    border-radius: 40px;
+    border-radius: 20px;
     color:#fff;
     background: rgb(46, 45, 45);
     cursor: pointer;
-    padding: 16px 50px;
+    /* padding: 16px 50px; */
+    width: 70px;
+    margin: 10px;
 }
 
 ul li{
     list-style: none;
     cursor: pointer;
     user-select: none;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+    cursor: pointer;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    /* background-image: url(images/checked.jpg); */
 }
